@@ -243,38 +243,64 @@ main {
     justify-content: center;
     width: 100rem;
     height: 60rem;
-    margin: 2.3rem;
+    margin: 1rem;
   }
 
   .name {
     position: relative;
-    font-size: 2.2rem;
+    font-size: 1.2rem;
     text-transform: uppercase;
-    letter-spacing: 1px;
-    word-spacing: 2px;
-    font-weight: 200;
+    letter-spacing: 0.5px;
+    word-spacing: 1px;
+    font-weight: 100;
     margin-bottom: 1rem;
   }
 
-  .score {
-    font-size: 4rem;
-    font-weight: 200;
+  .player player--0 .score {
+    font-size: 2rem;
+    font-weight: 100;
     color: #c7365f;
     margin-bottom: auto;
   }
 
   .current {
-    width: 70%;
+    width: 8rem;
+    height: 8rem;
     padding: 2rem;
+    position: relative;
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    line-height: 0.5rem;
+  }
+
+  #current--player--0 {
+    margin-left: 25px;
+  }
+
+  #current--player--1 {
+    margin-right: 25px;
+  }
+  .player--0 {
+    left: 40px;
   }
 
   .current-label {
     margin-bottom: 1rem;
     font-size: 1.2rem;
+  }
+
+  .current-score {
+    font-size: 1.5rem;
+  }
+
+  .btn {
+    font-size: 1.2rem;
+    width: 14rem;
+    height: 6rem;
+    letter-spacing: 0.2rem;
+    word-spacing: 0.2rem;
   }
 }
