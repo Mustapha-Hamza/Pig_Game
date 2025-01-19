@@ -241,22 +241,53 @@ main {
   main {
     display: flex;
     justify-content: center;
-    width: 100rem;
+    width: 90%;
     height: 60rem;
     margin: 1rem;
   }
 
+  #section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  #name--0 {
+    left: 3rem;
+  }
+
+  #name--1 {
+    right: 3rem;
+  }
+
+  #score--0 {
+    padding-left: 6rem;
+  }
+
+  #score--1 {
+    padding-right: 6rem;
+  }
+
   .name {
-    position: relative;
     font-size: 1.2rem;
     text-transform: uppercase;
     letter-spacing: 0.5px;
     word-spacing: 1px;
     font-weight: 100;
     margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: auto;
   }
 
-  .player player--0 .score {
+  .score {
+    font-size: 1.5rem;
+  }
+
+  .player .score {
     font-size: 2rem;
     font-weight: 100;
     color: #c7365f;
@@ -277,14 +308,11 @@ main {
   }
 
   #current--player--0 {
-    margin-left: 25px;
+    left: 2rem;
   }
 
   #current--player--1 {
-    margin-right: 25px;
-  }
-  .player--0 {
-    left: 40px;
+    right: 2rem;
   }
 
   .current-label {
@@ -297,8 +325,8 @@ main {
   }
 
   .btn {
-    font-size: 1.2rem;
-    width: 14rem;
+    font-size: 0.8rem;
+    width: 12rem;
     height: 6rem;
     letter-spacing: 0.2rem;
     word-spacing: 0.2rem;
